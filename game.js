@@ -455,11 +455,11 @@ renderer.domElement.addEventListener('mousedown', (event) => {
 document.addEventListener('contextmenu', (event) => event.preventDefault());
 
 startButton.addEventListener('click', () => {
+  overlay.classList.add('hidden');
   controls.lock();
 });
 
 controls.addEventListener('lock', () => {
-  overlay.classList.add('hidden');
   hudText.textContent = 'Mining and building enabled. Use the hotbar or keys 1-6 to select a block.';
 });
 
