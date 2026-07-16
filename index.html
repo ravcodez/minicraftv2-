@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minicraft</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="game-ui">
+    <div id="title">Minicraft</div>
+    <div id="stats">Loading world...</div>
+    <div id="hotbar" aria-label="Inventory hotbar"></div>
+    <div id="hud">Press <b>Start</b> and click to lock the pointer.</div>
+  </div>
+
+  <div id="overlay" class="visible">
+    <div class="overlay-card">
+      <h1>Minicraft</h1>
+      <p>A Minecraft-inspired voxel replica with world generation, first-person controls, block placement, mining, inventory, day/night cycle, and simple mob behavior.</p>
+      <div class="controls">
+        <p><b>Controls</b></p>
+        <ul>
+          <li>W/A/S/D: move</li>
+          <li>Space: jump</li>
+          <li>Mouse: look</li>
+          <li>Left click: mine block</li>
+          <li>Right click: place block</li>
+          <li>1-6: switch block type</li>
+        </ul>
+      </div>
+      <button id="startBtn">Start Minicraft</button>
+    </div>
+  </div>
+
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
